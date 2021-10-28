@@ -14,7 +14,7 @@
   --text-color-light: hsl(var(--hue), 4%, 55%);
 
   /*Green gradient*/
-  --body-color: linear-gradient(
+  /* --body-color: linear-gradient(
     90deg,
     hsl(104, 28%, 40%) 0%,
     hsl(58, 28%, 40%) 100%
@@ -23,7 +23,7 @@
     136deg,
     hsl(104, 28%, 35%) 0%,
     hsl(58, 28%, 35%) 100%
-  );
+  ); */
 
   /*Red gradient*/
   /* --body-color: linear-gradient(
@@ -38,12 +38,12 @@
   ); */
 
   /*Black solid*/
-  /* --body-color: hsl(30, 8%, 8%);
-  --container-color: hsl(30, 8%, 10%); */
+  --body-color: hsl(30, 8%, 8%);
+  --container-color: hsl(30, 8%, 10%);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 2rem;
+  --biggest-font-size: 1.8rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -73,7 +73,7 @@
 /* Responsive typography */
 @media screen and (min-width: 992px) {
   :root {
-    --biggest-font-size: 4rem;
+    --biggest-font-size: 3.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -407,7 +407,12 @@ button {
   align-items: center;
   column-gap: 0.5rem;
 }
-
+@media screen and (max-width: 400px) {
+  .button {
+    padding: 0.9rem 0.3rem;
+    font-size: 14px;
+  }
+}
 /*=============== CATEGORY ===============*/
 .category__container {
   grid-template-columns: repeat(2, 1fr);
